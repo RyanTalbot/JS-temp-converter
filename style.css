@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Da 2", cursive;
 }
 
 .container {
@@ -32,6 +38,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 2.4rem;
+  font-weight: 600;
 }
 
 .conversion-area {
@@ -39,16 +46,61 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
+  padding-bottom: 5%;
 }
 
 .conversion-area .fahrenheit-area {
   grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fahrenheit-area p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.fahrenheit-area input {
+  border-style: none;
+  height: 40px;
+  width: 100px;
 }
 
 .conversion-area .convert {
   grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.convert .convert-btn {
+  width: 180px;
+  height: 40px;
+  border-style: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .conversion-area .celsius-area {
   grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.celsius-area p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.celsius-area #output {
+  height: 40px;
+  width: 100px;
+  text-align: center;
 }
