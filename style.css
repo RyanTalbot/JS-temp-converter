@@ -3,3 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.converter-card {
+  background-color: aqua;
+  width: 800px;
+  height: 320px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.heading-copy {
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-copy h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2.4rem;
+}
+
+.conversion-area {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+
+.conversion-area .fahrenheit-area {
+  grid-column: 1/2;
+}
+
+.conversion-area .convert {
+  grid-column: 2/3;
+}
+
+.conversion-area .celsius-area {
+  grid-column: 3/4;
+}
