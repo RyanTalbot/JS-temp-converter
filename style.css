@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+  background-color: #fbf3f3;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,12 +20,14 @@ body {
 }
 
 .converter-card {
-  background-color: aqua;
+  background-color: #fff;
   width: 800px;
   height: 320px;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(2, 1fr);
+  border-radius: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
 }
 
 .heading-copy {
@@ -32,13 +35,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #5b4b92;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .heading-copy h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 600;
+  color: #fff;
 }
 
 .conversion-area {
@@ -62,10 +68,19 @@ body {
   font-weight: 400;
 }
 
+#underline {
+  height: 1.2px;
+  width: 200px;
+  background-color: #c5a4ad;
+}
+
 .fahrenheit-area input {
   border-style: none;
   height: 40px;
   width: 100px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .conversion-area .convert {
@@ -74,16 +89,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #5b4b92;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .convert .convert-btn {
   width: 180px;
-  height: 40px;
+  height: 45px;
   border-style: none;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
+  background-color: #fb7454;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
 }
 
 .conversion-area .celsius-area {
@@ -103,4 +124,5 @@ body {
   height: 40px;
   width: 100px;
   text-align: center;
+  font-size: 24px;
 }
